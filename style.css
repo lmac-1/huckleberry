@@ -28,16 +28,25 @@ h1, h2, h3, h4, h5, h6, p, figure, blockquote, ul, ol, dl, dt, dd {
 }
 
 html {
+  /* according to readme, the base font size must be 18px */ 
   font-size: 18px;
 }
 
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-color: var(--gray-light);
 }
 
 header {
-  border-bottom: 4px solid var(--gray-dark);
+  border-bottom: 4px solid var(--gray-medium);
+  background-color: var(--white);
+}
+
+.intro-chunk {
+  padding-top: 80px;
+  padding-bottom: 32px;
+  max-width: 300px;
 }
 
 .title {
@@ -53,18 +62,36 @@ strong {
   color: var(--primary-green);
 }
 
-.intro-chunk {
-  margin-top: 64px;
-  max-width: 300px;
+.max-width-wrapper {
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
-.max-width-wrapper {
-  margin-left: 180px;
+.card {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 8px;
+  padding-bottom: 16px;
+  margin-top: 64px;
+  margin-left: -32px;
+  border-bottom: solid 5px var(--gray-medium);
+  background-color: var(--white);
 }
 
 .indented-heading {
   background-color: var(--secondary-gold-light);
+  border-bottom: 5px solid var(--secondary-gold-dark);
   width: fit-content;
-  padding: 16px 32px;
+  margin-left: -48px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 48px;
+  padding-right: 32px;
+  /* padding: 16px 32px; */
+  margin-bottom: 24px;
   font-size: 1.25rem;
+  font-weight: 900;
 }
