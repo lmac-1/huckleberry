@@ -1,15 +1,3 @@
-:root {
-  --primary-green: hsl(160deg, 100%, 30%);
-  --secondary-gold-light: hsl(45deg, 100%, 50%);
-  --secondary-gold-dark: hsl(45deg, 100%, 40%);
-  --black: hsl(0deg, 0%, 0%);
-  --gray-very-dark: hsl(0deg, 0%, 10%);
-  --gray-dark: hsl(0deg, 0%, 30%);
-  --gray-medium: hsl(0deg, 0%, 40%);
-  --gray-light: hsl(0deg, 0%, 60%);
-  --white: hsl(0deg, 0%, 100%);
-}
-
 * {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
@@ -19,78 +7,6 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
 }
 
 /* Add styles here! */
-h1, h2, h3, h4, h5, h6, p, figure, blockquote, ul, ol, dl, dt, dd {
-  margin: 0;
-}
-
-html {
-  /* according to readme, the base font size must be 18px */ 
-  font-size: 1.125rem;
-}
-
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  background-color: var(--gray-light);
-}
-
-header {
-  border-bottom: 4px solid var(--gray-medium);
-  background-color: var(--white);
-}
-
-.intro-chunk {
-  padding-top: 80px;
-  padding-bottom: 32px;
-  max-width: 300px;
-}
-
-.title {
-  font-size: 1.5rem;
-  margin-bottom: 40px;
-}
-
-p {
-  margin-bottom: 16px;
-}
-
-strong {
-  color: var(--primary-green);
-}
-
-.max-width-wrapper {
-  max-width: 680px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-
-.card {
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 8px;
-  padding-bottom: 16px;
-  margin-top: 64px;
-  margin-left: -32px;
-  border-bottom: solid 5px var(--gray-medium);
-  background-color: var(--white);
-}
-
-.indented-heading {
-  background-color: var(--secondary-gold-light);
-  border-bottom: 5px solid var(--secondary-gold-dark);
-  width: fit-content;
-  margin-left: -48px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 48px;
-  padding-right: 32px;
-  margin-bottom: 24px;
-  font-size: 1.25rem;
-  font-weight: 900;
-}
