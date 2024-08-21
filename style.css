@@ -10,15 +10,13 @@ body {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2rem; /* best to use rem with font sizes */
   line-height: 1.2;
   margin: 0;
   margin-bottom: 3rem;
 }
 
 header {
-  padding-top: 6rem;
-  padding-bottom: 4rem;
   border-bottom: 8px solid hsl(0deg 0% 60%);
 }
 
@@ -31,6 +29,8 @@ header {
 
 .intro-chunk {
   max-width: 415px;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
 }
 
 strong {
@@ -43,6 +43,7 @@ p {
   margin: 0;
   margin-bottom: 1rem;
 }
+/* this removes any awkward extra space at the end of the last paragraph */
 p:last-child {
   margin-bottom: 0;
 }
@@ -65,7 +66,8 @@ main {
   padding: 16px 32px;
   margin-left: -32px;
   margin-top: -16px;
-  margin-bottom: 1rem;
+  margin-bottom: 1rem; /* this is in rem so that it stays the same proportionally to the font size */
   width: fit-content;
   font-size: 1.5rem;
+  line-height: 1.2;
 }
